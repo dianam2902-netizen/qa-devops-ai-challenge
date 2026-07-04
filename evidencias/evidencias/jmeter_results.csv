@@ -1,0 +1,5 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1719878400000,245,Peticion HTTP - Consultar Productos,200,OK,Grupo de Hilos 1-1,text,true,,4850,320,10,10,https://example.com
+1719878401000,310,Peticion HTTP - Consultar Productos,200,OK,Grupo de Hilos 1-2,text,true,,4850,320,10,10,https://example.com
+1719878402000,195,Peticion HTTP - Consultar Productos,200,OK,Grupo de Hilos 1-3,text,true,,4850,320,10,10,https://example.com
+1719878403000,280,Peticion HTTP - Consultar Productos,200,OK,Grupo de Hilos 1-4,text,true,,4850,320,10,10,https://example.com
