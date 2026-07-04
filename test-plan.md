@@ -27,3 +27,4 @@ Para que un Pull Request (PR) sea aprobado e integrado a la rama principal (`mai
 La calidad ya no solo implica verificar que un botón funcione o que la página cargue rápido; la seguridad es un pilar fundamental de la calidad del software. 
 
 Bajo la filosofía DevSecOps, el equipo de QA desplaza la seguridad hacia la izquierda (*Shift-Left Testing*). Esto significa que las vulnerabilidades y las malas prácticas de configuración se mitigan de forma temprana mediante validaciones automatizadas en cada Pull Request, garantizando que el código entregado sea estable, rápido y seguro desde su origen.
+
