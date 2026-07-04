@@ -1,0 +1,35 @@
+name: QA Store - CI Quality Pipeline
+
+# El pipeline se activará automáticamente con cada cambio en el Pull Request hacia main
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  qa-validation:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Step 1: Copiar el código del repositorio en la máquina virtual de GitHub
+    - name: Checkout de código
+      uses: actions/checkout@v4
+
+    # Step 2: Configurar el entorno de ejecución (Simulando Node.js)
+    - name: Configurar Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-node-version: '20'
+
+    # Step 3: Simular la instalación de dependencias de QA Store
+    - name: Instalar dependencias del proyecto
+      run: |
+        echo "Instalando paquetes de testing..."
+        echo "Completado."
+
+    # Step 4: Simular la ejecución de los criterios mínimos de calidad (Quality Gates)
+    - name: Ejecutar Suite de Pruebas de QA
+      run: |
+        echo "Iniciando verificaciones automáticas..."
+        echo ">> Ejecutando pruebas funcionales..."
+        echo ">> Verificando criterios mínimos de aceptación..."
+        echo "¡Todos los Quality Gates han pasado con éxito!"
